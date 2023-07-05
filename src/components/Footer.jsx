@@ -5,24 +5,24 @@ import arrow from "../assets/arrow.svg";
 
 function Footer() {
   return (
-    <div className=" bg-black pt-16 flex flex-col p-4">
-      <img src={logo} alt="" />
+    <div className=" bg-black pt-16 flex flex-col items-center">
+      <img className="w-40" src={logo} alt="" />
       <div>
-        <img src={socialIcons} alt="" />
+        <img className="pt-6" src={socialIcons} alt="" />
       </div>
-      <nav>
-        <p>HOME</p>
-        <p>STORIES</p>
-        <p>FEATURES</p>
-        <p>PRICING</p>
+      <nav className="text-white text-xs pt-6 ">
+        <p className="p-2">HOME</p>
+        <p className="p-2">STORIES</p>
+        <p className="p-2">FEATURES</p>
+        <p className="p-2">PRICING</p>
       </nav>
       <div>
-        <button className="text-white pr-3">GET AN INVITE</button>
+        <button className="text-white pr-3 pt-4">GET AN INVITE</button>
         <button>
           <img src={arrow} alt="" />
         </button>
       </div>
-      <p className=" text-gray-400 text-xs">
+      <p className=" text-gray-400 text-xs pt-6 mb-12">
         Copyright 2019. All Rights Reserved
       </p>
     </div>

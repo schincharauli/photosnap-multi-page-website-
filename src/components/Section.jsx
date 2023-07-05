@@ -19,7 +19,7 @@ function Section({
         }`}
       >
         <h1
-          className={`font-DMSans font-bold text-4xl uppercase  section ${
+          className={`font-DMSans font-semibold text-4xl uppercase  section ${
             textWhite ? "text-white" : ""
           }`}
         >

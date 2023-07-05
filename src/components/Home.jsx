@@ -69,7 +69,6 @@ function Home() {
         buttonText="READ STORY"
         arrowImage={arrow}
       />
-
       <StorySection
         image={storyImage_4}
         title="Architecturals   "

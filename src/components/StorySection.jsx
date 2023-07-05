@@ -1,6 +1,6 @@
 import React from "react";
 
-function StorySection({ image, title, author, buttonText, arrowImage }) {
+function StorySection({ image, title, author, buttonText, arrowImage, date }) {
   return (
     <section>
       <div className="relative bg-gradient-to-b from-transparent via-transparent to-black">
@@ -10,6 +10,7 @@ function StorySection({ image, title, author, buttonText, arrowImage }) {
           alt=""
         />
         <div className="pt-56 pl-6 font-DMSans text-white">
+          <p className="font-light text-xs pt-0.5">{date}</p>
           <h2 className="font-medium text-l">{title}</h2>
           <p className="font-light text-xs pt-0.5">{author}</p>
           <div className="h-0.5 w-80 rounded-lg mt-3 mb-3 bg-white"></div>

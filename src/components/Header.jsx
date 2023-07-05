@@ -5,7 +5,7 @@ import menuIcon from "../assets/shared/mobile/menu.svg";
 function Header() {
   return (
     <div>
-      <nav className="flex items-center justify-between p-4">
+      <nav className="flex items-center justify-between p-6">
         <img src={logo} />
         <img src={menuIcon} />
       </nav>

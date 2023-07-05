@@ -17,7 +17,7 @@ function App() {
         <Pricing /> */}
         <Header />
         <Home />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

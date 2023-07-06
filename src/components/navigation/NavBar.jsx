@@ -12,9 +12,11 @@ function NavBar() {
     <div>
       <div className="shadow-md w-full fixed top-0 left-0 ">
         <div className="md:flex items-center justify-between bg-white py-8 md:px-10 px-7">
-          <div>
-            <img className=" cursor-pointer" src={logo} />
-          </div>
+          <Link to="/">
+            <div>
+              <img className=" cursor-pointer" src={logo} />
+            </div>
+          </Link>
           <div
             onClick={() => setOpen(!open)}
             className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"

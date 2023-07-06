@@ -21,7 +21,7 @@ function Pricing() {
   const priceBusiness = isToggled ? "$990.00" : "$99.00";
 
   return (
-    <div>
+    <div className="mt-20">
       <div>
         <img src={hero} alt="" />
         <Section

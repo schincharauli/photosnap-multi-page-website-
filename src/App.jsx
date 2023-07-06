@@ -12,12 +12,6 @@ import NavBar from "./components/navigation/NavBar";
 function App() {
   return (
     <Router>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/stories">Stories</Link>
-        <Link to="/features">Features</Link>
-        <Link to="/pricing">Pricing</Link>
-      </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/stories" element={<Stories />} />

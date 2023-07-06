@@ -19,9 +19,9 @@ import BetaCard from "../BetaCard";
 
 function Features() {
   return (
-    <div>
+    <div className="mt-20">
       <div>
-        <img src={hero} alt="" />
+        <img className="w-full h-auto" src={hero} alt="" />
         <Section
           title="FEATURES"
           description="We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories."

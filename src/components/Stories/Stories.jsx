@@ -24,9 +24,9 @@ import Footer from "../Footer";
 
 function Stories() {
   return (
-    <div>
+    <div className="mt-20">
       <div className=" bg-black">
-        <img src={imgOne} alt="" />
+        <img className="w-full h-auto" src={imgOne} alt="" />
         <p className="pl-6 pt-12 text-white text-xs">
           LAST MONTH’S FEATURED STORY
         </p>

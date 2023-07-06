@@ -15,10 +15,12 @@ import storyImage_4 from "../../assets/stories/mobile/architecturals.jpg";
 import featureIcon_one from "../../assets/features/desktop/responsive.svg";
 import featureIcon_two from "../../assets/features/desktop/no-limit.svg";
 import featureIcon_three from "../../assets/features/desktop/embed.svg";
+import Header from "../Header";
 
 function Home() {
   return (
     <div>
+      <Header />
       <Section
         image={section1_pic_one}
         title="Create and share your photo stories."

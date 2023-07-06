@@ -3,7 +3,7 @@ import React from "react";
 function BetaCard({ image, title, buttonText, arrowImage }) {
   return (
     <section>
-      <div className="relative bg-gradient-to-b from-transparent via-transparent to-black">
+      <div className="mt-12 relative bg-gradient-to-b from-transparent via-transparent to-black">
         <img
           className=" w-full h-full absolute object-cover mix-blend-overlay"
           src={image}

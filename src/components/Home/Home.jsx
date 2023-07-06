@@ -1,20 +1,20 @@
 import React from "react";
 import Section from "./Section";
-import StorySection from "./StorySection";
-import FeaturesSection from "./FeaturesSection";
+import StorySection from "../Stories/StorySection";
+import FeaturesSection from "../Features/FeaturesSection";
 
-import section1_pic_one from "../assets/home/mobile/create-and-share.jpg";
-import section1_pic_two from "../assets/home/mobile/beautiful-stories.jpg";
-import section1_pic_three from "../assets/home/mobile/designed-for-everyone.jpg";
-import arrow from "../assets/arrow.svg";
-import arrowBlack from "../assets/arrowBlack.svg";
-import storyImage_1 from "../assets/stories/mobile/mountains.jpg";
-import storyImage_2 from "../assets/stories/mobile/cityscapes.jpg";
-import storyImage_3 from "../assets/stories/mobile/18-days-voyage.jpg";
-import storyImage_4 from "../assets/stories/mobile/architecturals.jpg";
-import featureIcon_one from "../assets/features/desktop/responsive.svg";
-import featureIcon_two from "../assets/features/desktop/no-limit.svg";
-import featureIcon_three from "../assets/features/desktop/embed.svg";
+import section1_pic_one from "../../assets/home/mobile/create-and-share.jpg";
+import section1_pic_two from "../../assets/home/mobile/beautiful-stories.jpg";
+import section1_pic_three from "../../assets/home/mobile/designed-for-everyone.jpg";
+import arrow from "../../assets/arrow.svg";
+import arrowBlack from "../../assets/arrowBlack.svg";
+import storyImage_1 from "../../assets/stories/mobile/mountains.jpg";
+import storyImage_2 from "../../assets/stories/mobile/cityscapes.jpg";
+import storyImage_3 from "../../assets/stories/mobile/18-days-voyage.jpg";
+import storyImage_4 from "../../assets/stories/mobile/architecturals.jpg";
+import featureIcon_one from "../../assets/features/desktop/responsive.svg";
+import featureIcon_two from "../../assets/features/desktop/no-limit.svg";
+import featureIcon_three from "../../assets/features/desktop/embed.svg";
 
 function Home() {
   return (

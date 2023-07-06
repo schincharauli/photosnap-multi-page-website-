@@ -1,15 +1,21 @@
 import React from "react";
-import Header from "./Header";
-import hero from "../assets/features/mobile/hero.jpg";
-import Section from "./Section";
-import Footer from "./Footer";
+import Header from "../Header";
+import hero from "../../assets/features/mobile/hero.jpg";
+import Section from "../Home/Section";
+import Footer from "../Footer";
 import FeaturesSection from "./FeaturesSection";
-import featureIcon_one from "../assets/features/desktop/responsive.svg";
-import featureIcon_two from "../assets/features/desktop/no-limit.svg";
-import featureIcon_three from "../assets/features/desktop/embed.svg";
-import featureIcon_four from "../assets/features/desktop/custom-domain.svg";
-import featureIcon_five from "../assets/features/desktop/boost-exposure.svg";
-import featureIcon_six from "../assets/features/desktop/drag-drop.svg";
+
+import bgBeta from "../../assets/shared/mobile/bg-beta.jpg";
+import arrow from "../../assets/arrow.svg";
+
+import featureIcon_one from "../../assets/features/desktop/responsive.svg";
+
+import featureIcon_two from "../../assets/features/desktop/no-limit.svg";
+import featureIcon_three from "../../assets/features/desktop/embed.svg";
+import featureIcon_four from "../../assets/features/desktop/custom-domain.svg";
+import featureIcon_five from "../../assets/features/desktop/boost-exposure.svg";
+import featureIcon_six from "../../assets/features/desktop/drag-drop.svg";
+import BetaCard from "../BetaCard";
 
 function Features() {
   return (
@@ -53,6 +59,13 @@ function Features() {
           icon={featureIcon_six}
           title="Drag & Drop Image"
           description="Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories. "
+        />
+        <BetaCard
+          image={bgBeta}
+          title="We’re in beta.
+        Get your invite today!"
+          buttonText="GET AN INVITE"
+          arrowImage={arrow}
         />
         <Footer />
       </div>

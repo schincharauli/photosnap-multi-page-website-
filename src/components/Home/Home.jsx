@@ -20,7 +20,6 @@ import Header from "../Header";
 function Home() {
   return (
     <div>
-      <Header />
       <Section
         image={section1_pic_one}
         title="Create and share your photo stories."

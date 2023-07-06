@@ -25,7 +25,6 @@ import Footer from "../Footer";
 function Stories() {
   return (
     <div>
-      <Header />
       <div className=" bg-black">
         <img src={imgOne} alt="" />
         <p className="pl-6 pt-12 text-white text-xs">

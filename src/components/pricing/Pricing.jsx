@@ -22,8 +22,6 @@ function Pricing() {
 
   return (
     <div>
-      <Header />
-
       <div>
         <img src={hero} alt="" />
         <Section

@@ -20,7 +20,6 @@ import BetaCard from "../BetaCard";
 function Features() {
   return (
     <div>
-      <Header />
       <div>
         <img src={hero} alt="" />
         <Section

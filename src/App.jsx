@@ -7,6 +7,7 @@ import Pricing from "./components/pricing/Pricing";
 import Home from "./components/Home/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import NavBar from "./components/navigation/NavBar";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
       </Routes>
       <>
+        <NavBar />
         {/* <Header /> */}
         {/* <Home /> */}
         {/* <Footer /> */}

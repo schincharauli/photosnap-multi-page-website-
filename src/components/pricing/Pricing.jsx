@@ -25,7 +25,7 @@ function Pricing() {
   } else if (isDesktop) {
     imageSource = heroDesktop;
   } else {
-    imageSource - hero;
+    imageSource = hero;
   }
 
   const toggleHandler = () => {
@@ -66,16 +66,6 @@ function Pricing() {
           </section>
         </div>
       </div>
-
-      {/* <img src={hero} alt="" /> */}
-      {/* <Section
-          title="PRICING"
-          description="Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos."
-          buttonClass="text-white"
-          blackBackground={true}
-          textWhite={true}
-        /> */}
-
       <div className="flex justify-center items-center pt-8 ">
         <p className={`p-4 ${isToggled ? "text-gray-400" : ""}`}>Monthly</p>
         <label className="relative inline-flex items-center cursor-pointer">

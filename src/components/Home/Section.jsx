@@ -51,21 +51,21 @@ function Section({
           reverseLayout ? "md:flex-row-reverse" : "md:flex-row"
         }`}
       >
-        <div className="md:w-1/3">
+        <div className="md:w-1/3 lg:w-2/3">
           <img
-            className="sm:w-full md:w-100% md:h-full lg:w-full"
+            className="sm:w-full md:w-100% md:h-full lg:w-full xl:h-full"
             src={imageSrc}
             alt="Image"
           />
         </div>
 
         <div
-          className={`pl-6 pr-4 pt-16 md:h-92 lg:h-96 section md:w-2/3 ${
+          className={`pl-6 pr-4 pt-16 md:h-92 xl:h-100% section md:w-2/3 lg:w-1/3 lg:h-full ${
             blackBackground ? "bg-black " : ""
           }`}
         >
           <h1
-            className={`font-DMSans font-semibold text-4xl md:pt-12 uppercase section ${
+            className={`font-DMSans font-semibold text-4xl md:pt-12 uppercase section lg:text-6xl ${
               textWhite ? "text-white" : ""
             }`}
           >

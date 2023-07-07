@@ -1,13 +1,53 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { useMedia } from "react-use";
+import ImageOne from "../../assets/stories/desktop/18-days-voyage.jpg";
 
-function StorySection({ image, title, author, buttonText, arrowImage, date }) {
+function StorySection({
+  image,
+  title,
+  author,
+  buttonText,
+  arrowImage,
+  date,
+  mobileImage,
+  tabletImage,
+  desktopImage,
+}) {
+  const [screenSize, setScreenSize] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        setScreenSize("desktop");
+      } else if (window.matchMedia("(min-width: 768px)").matches) {
+        setScreenSize("tablet");
+      } else {
+        setScreenSize("mobile");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  let imageSrc;
+
+  if (screenSize === "desktop") {
+    imageSrc = desktopImage;
+  } else {
+    imageSrc = mobileImage;
+  }
+
   return (
     <section>
       <div className="relative bg-gradient-to-b from-transparent via-transparent to-black">
         <img
           className=" w-full h-full absolute object-cover mix-blend-overlay"
-          src={image}
+          src={imageSrc}
           alt=""
         />
         <div className="pt-56 pl-6 font-DMSans text-white">

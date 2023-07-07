@@ -21,6 +21,22 @@ import storyImage_14 from "../../assets/stories/mobile/dark-forest.jpg";
 import storyImage_15 from "../../assets/stories/mobile/somwarpet.jpg";
 import storyImage_16 from "../../assets/stories/mobile/land-of-dreams.jpg";
 
+import storyImage_1_desktop from "../../assets/stories/desktop/mountains.jpg";
+import storyImage_2_desktop from "../../assets/stories/desktop/cityscapes.jpg";
+import storyImage_3_desktop from "../../assets/stories/desktop/18-days-voyage.jpg";
+import storyImage_4_desktop from "../../assets/stories/desktop/architecturals.jpg";
+import storyImage_5_desktop from "../../assets/stories/desktop/world-tour.jpg";
+import storyImage_6_desktop from "../../assets/stories/desktop/unforeseen-corners.jpg";
+import storyImage_7_desktop from "../../assets/stories/desktop/king-on-africa.jpg";
+import storyImage_8_desktop from "../../assets/stories/desktop/trip-to-nowhere.jpg";
+import storyImage_9_desktop from "../../assets/stories/desktop/rage-of-the-sea.jpg";
+import storyImage_10_desktop from "../../assets/stories/desktop/running-free.jpg";
+import storyImage_11_desktop from "../../assets/stories/desktop/behind-the-waves.jpg";
+import storyImage_12_desktop from "../../assets/stories/desktop/calm-waters.jpg";
+import storyImage_13_desktop from "../../assets/stories/desktop/milky-way.jpg";
+import storyImage_14_desktop from "../../assets/stories/desktop/dark-forest.jpg";
+import storyImage_15_desktop from "../../assets/stories/desktop/somwarpet.jpg";
+import storyImage_16_desktop from "../../assets/stories/desktop/land-of-dreams.jpg";
 import imgOneTablet from "../../assets/stories/tablet/moon-of-appalacia.jpg";
 import imgOneDesktop from "../../assets/stories/desktop/moon-of-appalacia.jpg";
 
@@ -72,7 +88,8 @@ function Stories() {
 
       <div className="grid grid-cols-1 md:grid-cols-2">
         <StorySection
-          image={storyImage_1}
+          mobileImage={storyImage_1}
+          desktopImage={storyImage_1_desktop}
           date="April 16th 2020"
           title="The Mountains"
           author="by John Appleseed"
@@ -80,7 +97,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_2}
+          mobileImage={storyImage_2}
+          desktopImage={storyImage_2_desktop}
           date="April 14th 2020"
           title="Sunset Cityscapes"
           author="by Benjamin Cruz"
@@ -88,7 +106,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_3}
+          mobileImage={storyImage_3}
+          desktopImage={storyImage_3_desktop}
           date="April 11th 2020"
           title="18 Days Voyage"
           author="by Alexei Borodin"
@@ -96,7 +115,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_4}
+          mobileImage={storyImage_4}
+          desktopImage={storyImage_4_desktop}
           date="April 9th 2020"
           title="Architecturals   "
           author="by Samantha Brooke"
@@ -104,7 +124,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_5}
+          mobileImage={storyImage_5}
+          desktopImage={storyImage_5_desktop}
           date="April 7th 2020"
           title="World Tour 2019   "
           author="by Timothy Wagner"
@@ -112,7 +133,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_6}
+          mobileImage={storyImage_6}
+          desktopImage={storyImage_6_desktop}
           date="April 3rd 2020"
           title="Unforeseen Corners "
           author="by William Malcolm"
@@ -120,7 +142,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_7}
+          mobileImage={storyImage_7}
+          desktopImage={storyImage_7_desktop}
           date="March 29th 2020"
           title="King on Africa: Part II "
           author="by Tim Hillenburg"
@@ -128,7 +151,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_8}
+          mobileImage={storyImage_8}
+          desktopImage={storyImage_8_desktop}
           date="March 21st 2020"
           title="The Trip to Nowhere "
           author="by Felicia Rourke"
@@ -136,7 +160,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_9}
+          mobileImage={storyImage_9}
+          desktopImage={storyImage_9_desktop}
           date="March 19th 2020"
           title="Rage of The Sea "
           author="by Mohammed Abdul"
@@ -144,7 +169,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_10}
+          mobileImage={storyImage_10}
+          desktopImage={storyImage_10_desktop}
           date="March 16th 2020"
           title="Running Free "
           author="by Michelle"
@@ -152,7 +178,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_11}
+          mobileImage={storyImage_11}
+          desktopImage={storyImage_11_desktop}
           date="March 11th 2020"
           title="Behind the Waves "
           author="by Lamarr Wilson"
@@ -160,7 +187,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_12}
+          mobileImage={storyImage_12}
+          desktopImage={storyImage_12_desktop}
           date="March 9th 2020"
           title="Calm Waters "
           author="by Samantha Brooke"
@@ -168,7 +196,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_13}
+          mobileImage={storyImage_13}
+          desktopImage={storyImage_13_desktop}
           date="March 5th 2020"
           title="The Milky Way"
           author="by Benjamin Cruz"
@@ -176,7 +205,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_14}
+          mobileImage={storyImage_14}
+          desktopImage={storyImage_14_desktop}
           date="March 4th 2020"
           title="Night at The Dark Forest"
           author="by  Mohammed Abdul"
@@ -184,7 +214,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_15}
+          mobileImage={storyImage_15}
+          desktopImage={storyImage_15_desktop}
           date="March 1th 2020"
           title="Somwarpet’s Beauty"
           author="by Michelle"
@@ -192,7 +223,8 @@ function Stories() {
           arrowImage={arrow}
         />
         <StorySection
-          image={storyImage_16}
+          mobileImage={storyImage_16}
+          desktopImage={storyImage_16_desktop}
           date="March 1th 2020"
           title="Somwarpet’s Beauty"
           author="by Michelle"

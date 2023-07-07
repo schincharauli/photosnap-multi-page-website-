@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import hero from "../../assets/pricing/mobile/hero.jpg";
+import heroTablet from "../../assets/pricing/tablet/hero.jpg";
+import heroDesktop from "../../assets/pricing/desktop/hero.jpg";
+
 import Section from "../Home/Section";
 import PricingCard from "./PricingCard";
 import PricingFeatures from "./PricingFeatures";
@@ -8,9 +11,20 @@ import Footer from "../Footer";
 import BetaCard from "../BetaCard";
 import arrow from "../../assets/arrow.svg";
 import bgBeta from "../../assets/shared/mobile/bg-beta.jpg";
+import { useMedia } from "react-use";
 
 function Pricing() {
   const [isToggled, setIsToggled] = useState(false);
+  const isTablet = useMedia("(min-width: 768px)");
+  const isDesktop = useMedia("(min-width: 1024px)");
+
+  let imageSource = hero;
+
+  if (isTablet) {
+    imageSource = heroTablet;
+  } else if (isDesktop) {
+    imageSource = heroDesktop;
+  }
 
   const toggleHandler = () => {
     setIsToggled(!isToggled);
@@ -22,16 +36,44 @@ function Pricing() {
 
   return (
     <div className="mt-20">
-      <div>
-        <img src={hero} alt="" />
-        <Section
+      <div className="flex md:grid grid-cols-1 md:grid-cols-1 gap-4">
+        <div className={`flex flex-col md:flex-row-reverse `}>
+          <img
+            className={`w-full h-full md:w-1/3 md:w-100% md:h-100%`}
+            src={imageSource}
+            alt=""
+          />
+
+          <section className=" bg-black md:w-2/3">
+            <div>
+              <div
+                className={`pl-6 pr-4 pt-16 md:h-92 lg:h-full section  md:mt-12 md:ml-18 md:pl-12 `}
+              >
+                <h1
+                  className={`text-white font-DMSans font-semibold text-4xl md:pt-12 uppercase section `}
+                >
+                  FEATURES
+                </h1>
+                <p className="text-white pt-6 mb-24  md:w-2/3">
+                  We make sure all of our features are designed to be loved by
+                  every aspiring and even professional photograpers who wanted
+                  to share their stories.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      {/* <img src={hero} alt="" /> */}
+      {/* <Section
           title="PRICING"
           description="Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos."
           buttonClass="text-white"
           blackBackground={true}
           textWhite={true}
-        />
-      </div>
+        /> */}
+
       <div className="flex justify-center items-center pt-8 ">
         <p className={`p-4 ${isToggled ? "text-gray-400" : ""}`}>Monthly</p>
         <label className="relative inline-flex items-center cursor-pointer">

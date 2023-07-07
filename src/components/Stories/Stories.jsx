@@ -39,17 +39,34 @@ function Stories() {
           <p className=" pl-6 pt-12 text-white text-xs md:hidden">
             LAST MONTH’S FEATURED STORY
           </p>
-
-          <div className="">
-            <Section
-              title="HAZY FULL MOON OF APPALACHIA"
-              description="The dissected plateau area, while not actually made up of geological mountains, is popularly called 'mountains,' especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged."
-              buttonLabel="VIEW THE STORIES"
-              arrowImage={arrow}
-              buttonClass="text-white"
-              textWhite={true}
-            />
-          </div>
+          <section className="flex md:grid grid-cols-1 md:grid-cols-1 gap-4">
+            <div className={`flex flex-col `}>
+              <div
+                className={`pl-6 pr-4 pt-16 md:h-92 lg:h-96 section md:w-2/3 `}
+              >
+                <h1
+                  className={`text-white font-DMSans font-semibold text-4xl md:pt-12 uppercase section `}
+                >
+                  HAZY FULL MOON OF APPALACHIA
+                </h1>
+                <p className="text-gray-400 pt-3">
+                  The dissected plateau area, while not actually made up of
+                  geological mountains, is popularly called 'mountains,'
+                  especially in eastern Kentucky and West Virginia, and while
+                  the ridges are not high, the terrain is extremely rugged."
+                </p>
+                <p></p>
+                <div className="flex items-center pb-14 pt-6 md:pb-20">
+                  <button className={`pr-3 text-white `}>
+                    VIEW THE STORIES
+                  </button>
+                  <span>
+                    <img src={arrow} alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
 

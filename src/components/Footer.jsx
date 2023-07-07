@@ -6,7 +6,7 @@ import arrow from "../assets/arrow.svg";
 
 function Footer() {
   return (
-    <div className=" bg-black pt-16 flex flex-col items-center md:grid grid-cols-1 md:grid-cols-2 gap-4 md:items-center md:pb-24">
+    <div className=" bg-black pt-16 flex flex-col items-center md:grid grid-cols-1 md:grid-cols-2 gap-4 md:items-center md:justify-centre md:pb-24 md:pl-12">
       <div className="md:w-1/2">
         <img className="w-40" src={logo} alt="" />
 

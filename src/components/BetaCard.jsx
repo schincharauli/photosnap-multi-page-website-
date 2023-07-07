@@ -9,11 +9,14 @@ function BetaCard({ image, title, buttonText, arrowImage }) {
           src={image}
           alt=""
         />
-        <div className="pt-10 pl-6 font-DMSans text-white">
-          <h2 className="font-DMSans font-semibold text-4xl uppercase">
-            {title}
-          </h2>
-          <div className="flex items-center pt-6 pl-2">
+        <div className="pt-10 pl-6 font-DMSans text-white md:flex grid-cols-1 md:grid-cols-2 gap-4 md:ml-8">
+          <div className="md:w-1/2">
+            <h2 className="font-DMSans font-semibold text-4xl uppercase">
+              {title}
+            </h2>
+          </div>
+
+          <div className="flex items-center pt-6 pl-2 md:w-1/2 md:justify-center">
             <p className="text-sm font-light">{buttonText}</p>
             <button className="pl-4">
               <img src={arrowImage} alt="" />

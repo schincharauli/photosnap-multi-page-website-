@@ -29,6 +29,7 @@ function Features() {
           blackBackground={true}
           textWhite={true}
         />
+
         <FeaturesSection
           icon={featureIcon_one}
           title="100% Responsive"

@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 function StorySection({ image, title, author, buttonText, arrowImage, date }) {
   return (

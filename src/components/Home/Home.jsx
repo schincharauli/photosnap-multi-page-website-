@@ -68,7 +68,9 @@ function Home() {
         />
       </div>
 
-      <div className="md:flex md:flex-row md:flex-wrap md:w-full md:gap-3 md:justify-between md:pl-3 md:pr-3">
+      {/* <div className="md:flex md:flex-row md:flex-wrap md:w-full md:gap-3 md:justify-between md:pl-3 md:pr-3 lg:mt-3  "> */}
+
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <StorySection
           image={storyImage_1}
           title="The Mountains"

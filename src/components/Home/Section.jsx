@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 function Section({
   blackBackground,
   textWhite,
-  image,
+  // image,
   title,
   description,
   buttonLabel,
@@ -45,22 +45,22 @@ function Section({
     imageSrc = mobileImage;
   }
   return (
-    <section className="flex ">
+    <section className="flex md:grid grid-cols-1 md:grid-cols-1 gap-4">
       <div
         className={`flex flex-col ${
           reverseLayout ? "md:flex-row-reverse" : "md:flex-row"
         }`}
       >
-        <div className="">
+        <div className="md:w-1/3">
           <img
-            className="w-full md:w-auto md:h-96 lg:w-full"
+            className="sm:w-full md:w-100% md:h-full lg:w-full"
             src={imageSrc}
             alt="Image"
           />
         </div>
 
         <div
-          className={`pl-6 pr-4 pt-16 md:w-full md:h-92 lg:h-96 section ${
+          className={`pl-6 pr-4 pt-16 md:h-92 lg:h-96 section md:w-2/3 ${
             blackBackground ? "bg-black " : ""
           }`}
         >

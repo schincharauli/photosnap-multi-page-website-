@@ -13,11 +13,13 @@ function PricingFeatures({
 }) {
   return (
     <div>
-      <div className="pl-8 font-DMSans">
-        <h3 className="pt-4 text-sm">{title}</h3>
+      <div className="pl-8 font-DMSans md:grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        <div>
+          <h3 className="pt-4 text-sm">{title}</h3>
+        </div>
         <div className="flex justify-between mr-20 text-xs mt-4 text-gray-400">
           <div>
-            <p className="">{dealBasic}</p>
+            <p className="md:hidden lg:hidden">{dealBasic}</p>
             <span>
               <img
                 className={` mt-2 ${checkBasic ? "checked" : ""}`}
@@ -27,7 +29,7 @@ function PricingFeatures({
             </span>
           </div>
           <div>
-            <p>{dealPro}</p>
+            <p className="md:hidden lg:hidden">{dealPro}</p>
             <span>
               <img
                 className={`mt-2 ${checkPro ? "checked" : ""}`}
@@ -37,7 +39,7 @@ function PricingFeatures({
             </span>
           </div>
           <div>
-            <p>{dealBusiness}</p>
+            <p className="md:hidden lg:hidden">{dealBusiness}</p>
             <span>
               <img
                 className={`mt-2 ${checkBusiness ? "checked" : ""}`}

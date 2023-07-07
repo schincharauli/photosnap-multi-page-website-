@@ -24,6 +24,8 @@ function Pricing() {
     imageSource = heroTablet;
   } else if (isDesktop) {
     imageSource = heroDesktop;
+  } else {
+    imageSource - hero;
   }
 
   const toggleHandler = () => {
@@ -132,9 +134,19 @@ function Pricing() {
         btnTextWhite={true}
       />
       <section>
-        <p className="pl-8 pt-12">THE FEATURES</p>
-        <div className=" ml-8 h-0.5 w-72 rounded-lg mt-3 mb-3 bg-black"></div>
+        <div className="md:grid grid-cols-1 md:grid-cols-2 gap-4  md:items-center">
+          <div>
+            <p className="pl-8 pt-12">THE FEATURES</p>
+          </div>
+          <div className="pt-12 hidden md:block lg:block md:flex lg:flex md:justify-between lg:justify-between md:pr-12 lg:pr-12">
+            <p>BASIC</p>
+            <p>PRO</p>
+            <p>BUSINESS</p>
+          </div>
+        </div>
+        <div className="ml-8 h-0.5 w-72 rounded-lg mt-3 mb-3 bg-black md:w-full"></div>
       </section>
+
       <PricingFeatures
         title="UNLIMITED STORY POSTING"
         dealBasic="BASIC"

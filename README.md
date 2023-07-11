@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/schincharauli/photosnap-multi-page-website-)
-- Live Site URL: [Add live site URL here](https://luxury-starburst-b92b01.netlify.app/)
+- Solution URL: https://github.com/schincharauli/photosnap-multi-page-website-
+- Live Site URL: https://luxury-starburst-b92b01.netlify.app/
 
 ## My process
 
